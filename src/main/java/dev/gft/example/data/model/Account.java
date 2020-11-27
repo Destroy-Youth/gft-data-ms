@@ -24,7 +24,7 @@ public class Account implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer accountId;
+    private Long accountId;
     private String accountNumber;
     private BigDecimal balance;
     private String accountType;
@@ -32,11 +32,11 @@ public class Account implements Serializable {
     @JoinColumn(name = "client_id")
     private Client client;
 
-    public Integer getAccountId() {
+    public Long getAccountId() {
         return accountId;
     }
 
-    public void setAccountId(Integer accountId) {
+    public void setAccountId(Long accountId) {
         this.accountId = accountId;
     }
 

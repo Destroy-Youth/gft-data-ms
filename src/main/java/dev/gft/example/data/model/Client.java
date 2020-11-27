@@ -23,7 +23,7 @@ public class Client implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Integer clientId;
+	private Long clientId;
 	private String firstName;
 	private String lastName;
 	@Column(name = "birthdate")
@@ -33,11 +33,11 @@ public class Client implements Serializable {
 	@OneToMany(mappedBy = "clients")
 	private List<Client> clients;
 
-	public Integer getClientId() {
+	public Long getClientId() {
 		return clientId;
 	}
 
-	public void setClientId(Integer clientId) {
+	public void setClientId(Long clientId) {
 		this.clientId = clientId;
 	}
 
