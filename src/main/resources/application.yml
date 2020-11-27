@@ -1,0 +1,19 @@
+
+spring:
+    datasource:
+        driverClassName: org.h2.Driver
+        username: sa
+        password: 
+        url: jdbc:h2:./src/main/resources/mydb;create=true
+    jpa:
+        hibernate:
+            ddl-auto: update
+        database-platform: org.hibernate.dialect.H2Dialect
+    h2:
+        console:
+            enabled: true
+
+server:
+  port: 8106
+
+
