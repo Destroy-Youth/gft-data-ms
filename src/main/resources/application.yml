@@ -1,5 +1,7 @@
 
 spring:
+    application:
+       name: data 
     datasource:
         driverClassName: org.h2.Driver
         username: sa
