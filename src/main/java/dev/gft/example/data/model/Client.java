@@ -30,8 +30,8 @@ public class Client implements Serializable {
 	private Date birthDate;
 	private String sex;
 
-	@OneToMany(mappedBy = "clients")
-	private List<Client> clients;
+	@OneToMany(mappedBy = "client")
+	private List<Account> accounts;
 
 	public Long getClientId() {
 		return clientId;
@@ -73,12 +73,12 @@ public class Client implements Serializable {
 		this.sex = sex;
 	}
 
-	public List<Client> getClients() {
-		return clients;
+	public List<Account> getAccounts() {
+		return accounts;
 	}
 
-	public void setClients(List<Client> clients) {
-		this.clients = clients;
+	public void setAccounts(List<Account> accounts) {
+		this.accounts = accounts;
 	}
 
 }
